@@ -1,0 +1,83 @@
+.section {
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, #FDF6EC 0%, #F9E4CC 100%);
+}
+.container { max-width: 1200px; margin: 0 auto; }
+.header { text-align: center; margin-bottom: 3rem; }
+.header .section-subtitle { margin: 0 auto; }
+
+.pinnedSection { margin-bottom: 1.5rem; }
+.pinnedSection .card { border: 2px solid var(--cfg-accent); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card); }
+
+.pinnedBadge {
+  position: absolute;
+  top: -12px; right: 1.25rem;
+  background: var(--golden);
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.75rem;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.05em;
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.typeBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-pill);
+}
+
+.typeDot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.date {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.cardTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: var(--warm-brown);
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.cardBody {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
